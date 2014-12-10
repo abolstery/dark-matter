@@ -1,0 +1,29 @@
+#chart {
+	padding-top: 5em;
+}
+
+#left {
+	padding-top: 2em;
+}
+
+body {
+  font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke-width: 7px;
+}

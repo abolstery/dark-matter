@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/foundation.css" />
+</head>
+
+<body>
+	<div class="small-6 large-5 columns" id="left">
+		<!--Top Half-->
+		<div>
+			<img src="galaxy.jpg" alt="galaxy">
+		</div>
+		<!--Bottom Half-->
+		<div>
+			<h5> Size </h5>
+			<div class="range-slider round" data-slider="20" data-options="display_selector:#sliderOutput1;start: 1; end: 50;">
+			    <span class="range-slider-handle" style="-webkit-transform: translateX(378.96000000000004px);"></span>
+			    <span class="range-slider-active-segment" style="width: 46%;"></span>
+			  	<input type="hidden">
+			</div>
+			<h5> Mass </h5>
+			<div class="range-slider round" data-slider="200" data-options="display_selector:#sliderOutput2; start: 1; end: 1000;">
+			    <span class="range-slider-handle" style="-webkit-transform: translateX(378.96000000000004px);"></span>
+			    <span class="range-slider-active-segment" style="width: 46%;"></span>
+			  	<input type="hidden">
+			</div>
+			<h5> Mass-to-Light Ratio </h5>
+			<div class="range-slider round" data-slider="46" data-options="display_selector:#sliderOutput3;">
+			    <span class="range-slider-handle" style="-webkit-transform: translateX(378.96000000000004px);"></span>
+			    <span class="range-slider-active-segment" style="width: 46%;"></span>
+			  	<input type="hidden">
+			</div>
+		</div>
+
+		<a onclick="graph();" class="button expand" style="">Graph it!</a>
+	</div>
+
+	<div class="small-6 large-7 columns">
+		<canvas id="chart" width="700px" height="500px"></canvas>
+
+	</div>
+
+ 	<script src="js/vendor/jquery.js"></script>
+  	<script src="js/foundation.min.js"></script>
+  	<script src="js/foundation/foundation.slider.js"></script>
+  	<script src="js/vendor/modernizr.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/graph.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
