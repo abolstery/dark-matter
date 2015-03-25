@@ -66,10 +66,14 @@ void potential_double (int *ndim, double *pos, double *acc, double *pot, double 
     double rad, f;
     int    i;
 	
-    for (i=0, rad=r2; i<*ndim; i++)
-        rad += sqr(pos[i])*iq2[i];
-    *pot = mor * log(rad);
-    f = -2.0*mor/rad;
-    for (i=0; i<*ndim; i++)
-        acc[i] = f*pos[i]*iq2[i];
+    for (i=0, rad=r2; i<*ndim; i++) {
+        rad += sqr(pos[i])*iq2[i]; //take it out
+        *pot = mor * log(rad); //mor = mc/rc ignore
+        f = -2.0*mor/rad; //do this anyway. it's the squared part
+        for (i=0; i<*ndim; i++) {
+            acc[i] = f*pos[i]*iq2[i]; //ignore iq2
+        }
+        //divide final answer by 1000 for the radius scaling. 
+    }
+
 }
