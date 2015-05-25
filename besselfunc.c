@@ -13,6 +13,8 @@
  *		dbesj0 dbesj1 dbesjn dbesy0 dbesy1 dbesyn
  */
 
+ //I and k values here. 
+
 #include <stdinc.h>
 
 /*

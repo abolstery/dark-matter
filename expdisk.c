@@ -2,7 +2,7 @@
  *  expdisk.c:	thin exponential disk
  *
  */
-
+//main thing
 
 /*CTEX
  *

@@ -27,3 +27,11 @@ body {
   fill: none;
   stroke-width: 7px;
 }
+
+.slides {
+  -webkit-transform: translateX(378.96000000000004px);
+}
+
+.widthAdj {
+  width: 46%;
+}
